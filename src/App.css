@@ -18,26 +18,34 @@
   font-family: "Jua";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 
 .grid-cols-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2.5rem;
 }
 
-.grid-cols-1 button {
-  border: none;
-  background: transparent;
-  text-align: center;
-  font-family: "Jua";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  transition: .5s ease-in-out 0s;
+.wrapper {
+  overflow: hidden;
 }
 
-.grid-cols-1 button:hover {
-  cursor: pointer;
-  transform: scale(1.25);
+.sliding-background {
+  background: url("../img/sliding_window.png") repeat-x center/80%;
+  height: 25rem;
+  width: 187.5rem;
+  animation: slide 60s linear infinte;
+  -webkit-animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  0%{
+    -webkit-transform: translate3d(-65.75rem, 0, 0);
+    transform: translate3d(-65.75rem, 0, 0);
+  }
+  100%{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
