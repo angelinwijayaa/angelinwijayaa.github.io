@@ -1,38 +1,43 @@
-.App {
+.topnav {
+  position: static;
+  height: 15vh;
+  background: linear-gradient(180deg, rgba(228,189,230,1) 20%, rgba(227,208,227,1) 52%, rgba(235,213,232,1) 94%);
+}
+
+.title {
+  position: static;
+  overflow: hidden;
+  padding-left: 30.0625rem;
+  padding-right: 18.9375rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.title p {
   text-align: center;
+  font-family: "Jua";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid-cols-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid-cols-1 button {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-family: "Jua";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  transition: .5s ease-in-out 0s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-cols-1 button:hover {
+  cursor: pointer;
+  transform: scale(1.25);
 }
