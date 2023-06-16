@@ -1,20 +1,26 @@
 .topnav {
-  position: static;
-  height: 15vh;
-  background: linear-gradient(180deg, rgba(228,189,230,1) 20%, rgba(227,208,227,1) 52%, rgba(235,213,232,1) 94%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 14vh;
+  /* background: linear-gradient(180deg, rgba(228,189,230,1) 20%, rgba(227,208,227,1) 52%, rgba(235,213,232,1) 94%); */
+  z-index: 1000;
 }
 
 .title {
-  position: static;
   overflow: hidden;
   padding-left: 30.0625rem;
   padding-right: 18.9375rem;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+  height: 9vh;
 }
 
 .title p {
+  color: rgb(243, 235, 235);
   text-align: center;
+  text-shadow: -0.18rem 0.18rem rgb(226, 161, 172);
   font-family: "Jua";
   font-style: normal;
   font-weight: 400;
@@ -28,11 +34,13 @@
 }
 
 .wrapper {
+  position: relative;
+  top: 14vh;
   overflow: hidden;
 }
 
 .sliding-background {
-  background: url("../img/sliding_window.png") repeat-x center/80%;
+  background: url("./img/sliding_window.png") repeat-x center/80%;
   height: 25rem;
   width: 187.5rem;
   animation: slide 60s linear infinte;
@@ -48,4 +56,56 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+}
+
+.petal-wrapper {
+  position: relative;
+}
+
+.petal {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  z-index: -1;
+  width: 100vw;
+  height: 15vh;
+  mix-blend-mode: multiply;
+  z-index: 999;
+  /* -webkit-animation: rotate 5s linear infinite;
+  -moz-animation: rotate 5s linear infinite;
+  -ms-animation: rotate 5s linear infinite;
+  -o-animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite; */
+}
+
+@keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.cols-2-1 {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.about-title {
+  
 }
