@@ -1,15 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import './button.css';
-import './index.css'
-import snacks from "./img/snacks.png"
-import petal from "./img/petals.gif"
+import "./App.css";
+import "./button.css";
+import "./index.css";
+import petal from "./img/petals.gif";
+import shopee from "./img/shopee.svg";
+import instagram from "./img/instagram.svg";
+import whatsapp from "./img/whatsapp.svg";
+import NyanCat from "./NyanCat";
 
 function Topnav(props) {
   return (
-    <div className='topnav'>
+    <div className="topnav">
       <div className="title">
-          <p>💗 Welcome to Purefoams Shop! 💗</p>
+        <p> Welcome to Purefoams Shop! </p>
       </div>
       <div className="grid-cols-1">
         {/* <div className="btn-one">Home</div>
@@ -29,7 +31,7 @@ function Topnav(props) {
 
 function Slider(props) {
   return (
-    <div className="wrapper">
+    <div className="wrapper-slider">
       <div className="sliding-background"></div>
     </div>
   );
@@ -37,22 +39,41 @@ function Slider(props) {
 
 function App() {
   return (
-    <div>
+    <div className="wrapper-html">
       <Topnav />
       <Slider />
-      <div className="petal-wrapper">
-        <img src={petal} className="petal" />
-      </div>
-      {/* <div className="grid-cols-2">
+      {/* <img src={petal} className="cherry-blossoms" alt="cherry blossoms" /> */}
+      <div className="grid-cols-2">
         <div className="cols-2-1">
-          <div className="about-title">About Purefoams Shop</div>
+          <div className="about-title">About Us:</div>
           <div className="about-desc">
-            <img src={snacks} width="200rem"/>
+            We are a squishy and slime shop from Indonesia. We sell products
+            from outside like blah blah thank you for visiting, this is just
+            randome text for now. please fill this later. Check out socials and
+            something: random text for now will fill in icons for this
+          </div>
+          <div className="socials-grid">
+            <a href="https://www.instagram.com/">
+              <img
+                src={instagram}
+                className="instagram"
+                href="https://www.instagram.com/"
+                alt="instagram icon"
+              />
+            </a>
+            <a href="https://shopee.com/">
+              <img src={shopee} className="shopee" alt="shopee icon" />
+            </a>
+            <a href="https://www.whatsapp.com/">
+              <img src={whatsapp} className="whatsapp" alt="whatsapp iccon" />
+            </a>
           </div>
         </div>
         <div className="cols-2-2"></div>
-        <div clasName="cols-2-3"></div>
-      </div> */}
+        <div className="cols-2-3"></div>
+      </div>
+      <NyanCat />
+      <section id="frame">cat</section>
     </div>
   );
 }
