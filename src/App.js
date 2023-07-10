@@ -42,7 +42,7 @@ function App() {
     <div className="wrapper-html">
       <Topnav />
       <Slider />
-      {/* <img src={petal} className="cherry-blossoms" alt="cherry blossoms" /> */}
+      <img src={petal} className="cherry-blossoms" alt="cherry blossoms" />
       <div className="grid-cols-2">
         <div className="cols-2-1">
           <div className="about-title">About Us:</div>
