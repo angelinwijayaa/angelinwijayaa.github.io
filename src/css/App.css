@@ -1,0 +1,309 @@
+.wrapper-html {
+  height: 100vh;
+}
+
+/* <------ NAVIGATION BAR */
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 4rem;
+  z-index: 1000;
+}
+
+.title {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 1vw;
+  width: 15vw;
+}
+
+.title a {
+  color: white;
+  text-align: center;
+  text-shadow: -0.02rem 0.02rem white;
+  font-family: "Italianno", cursive;
+  font-size: 3rem;
+  text-decoration: none;
+  margin: 0;
+  transition: color 200ms ease-in-out 0ms;
+}
+
+.title a:hover {
+  cursor: pointer;
+  color: #816151;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 2vh;
+  left: 80vw;
+  width: 20vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+}
+
+.nav-buttons a {
+  color: white;
+  text-align: center;
+  text-shadow: -0.02rem 0.02rem white;
+  font-family: "Italianno", cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 0;
+  transition: color 200ms ease-in-out 0ms;
+}
+
+.nav-buttons a:hover {
+  cursor: pointer;
+  color: #816151;
+}
+
+/* NAVIGATION BAR ------> */
+
+/* <------ ABOUT US SECTION */
+
+.about-us {
+  position: absolute;
+  top: 8rem;
+  left: 0rem;
+  right: 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.about-us-text {
+  padding-left: 6rem;
+  padding-right: 2rem;
+}
+
+.about-title {
+  color: rgb(243, 235, 235);
+  text-shadow: -0.14rem 0.14rem rgb(206, 146, 156);
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: "Jua";
+  font-size: 4rem;
+}
+
+.about-desc {
+  width: 40ch;
+  color: rgb(243, 235, 235);
+  text-shadow: -0.09rem 0.09rem rgb(206, 146, 156);
+  font-family: "Jua";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.about-us-img {
+  width: 30rem;
+  height: 30rem;
+  padding-left: 14rem;
+}
+
+/* ABOUT US SECTION ------> */
+
+/* <------ RECENT PRODUCTS SECTION */
+
+.recent-products {
+  position: absolute;
+  top: 47rem;
+  width: 100vw;
+}
+
+.recent-products-title {
+  color: rgb(243, 235, 235);
+  text-shadow: -0.14rem 0.14rem rgb(206, 146, 156);
+  /* padding-left: 25vw; */
+  text-align: center;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: "Jua";
+  font-size: 3.5rem;
+}
+
+.recent-products-grid {
+  display: grid;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 5vh;
+  width: 60vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem 2rem;
+}
+
+.recent-products-item {
+  font-size: 1rem;
+}
+
+.recent-products-item img {
+  position: relative;
+  left: 3.5rem;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 5%;
+  transition: all 200ms ease-in-out 0s;
+}
+
+.recent-products-item img:hover {
+  transform: scale(1.1);
+}
+
+.recent-products-item p {
+  position: relative;
+  left: 4rem;
+  right: 2rem;
+  color: rgb(255, 255, 255);
+  line-height: 0.5rem;
+  font-family: "Jua";
+  font-size: 1.5em;
+}
+
+/* RECENT PRODUCTS SECTION ------> */
+
+/* <------ IG SLIDER SECTION */
+
+.slider {
+  position: absolute;
+  top: 150rem;
+}
+
+.slider-text {
+  display: flex;
+  align-items: center;
+  color: rgb(243, 235, 235);
+  text-shadow: -0.14rem 0.14rem rgb(206, 146, 156);
+  padding-left: 5vw;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: "Jua";
+  font-size: 2rem;
+}
+
+.slider-wrapper {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  width: 94vw;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.instagram {
+  margin-left: 2vw;
+  width: 2.5rem;
+  height: 2.5rem;
+  float: left;
+  transition: all 200ms ease-in-out 0s;
+}
+
+.instagram:hover {
+  transform: scale(1.1);
+}
+
+.slider-window {
+  background: url("../img/sliding_window.png") repeat-x center/80%;
+  height: 25rem;
+  width: 187.5rem;
+  animation: slide 60s linear infinte;
+  -webkit-animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translate3d(-65.75rem, 0, 0);
+    transform: translate3d(-65.75rem, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* IG SLIDER SECTION ------> */
+
+.socials-grid {
+  display: grid;
+  width: 40ch;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 0.8rem;
+  gap: 1rem;
+}
+
+
+
+.shopee {
+  width: 2.2rem;
+  height: 2.2rem;
+  transition: transform 500ms ease-in-out 0s;
+}
+
+.shopee:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp {
+  width: 2.2rem;
+  height: 2.2rem;
+  transition: transform 500ms ease-in-out 0s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+.ducks {
+  padding: 1rem;
+  width: 22rem;
+  height: 18rem;
+  border-image: linear-gradient(red, blue) 27;
+}
+
+#scroll-status {
+  position: fixed;
+  top: 90vh;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 5rem;
+  width: 100vw;
+}
+
+#nyan-cat-position {
+  transition: all 500ms linear 0s;
+}
+
+#frame {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+}
+
+.grid-cols-1 button {
+  border-radius: 2rem;
+  background: transparent;
+  color: rgb(243, 235, 235);
+  -webkit-text-stroke: 0.125rem black;
+  text-align: center;
+  font-family: "Jua";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  transition: .3s ease-in-out 0s;
+  transition-property: cursor, border-color, opacity, transform, z-index;
+  opacity: 0.5;
+}
+
+.grid-cols-1 button:hover {
+  cursor: pointer;
+  border-color: black;
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 9999;
+}
